@@ -37,3 +37,39 @@ A Next.js application that fetches and displays upcoming English Premier League 
    ```bash
    git clone https://github.com/dhruvmeeena36/API-fetch-.git
    cd API-fetch-
+   
+### Project Structure
+/API-fetch-
+├── app/
+│   ├── api/
+│   │   └── matches/
+│   │       └── route.js    # API endpoint for matches
+│   └── page.js             # Main page component
+├── public/                 # Static files
+└── README.md
+
+### API Documentation
+The application uses the following API endpoint:
+
+GET https://fixturedownload.com/feed/json/epl-2023
+
+### Sample Response
+json
+[
+  {
+    "Id": 1,
+    "Date": "2023-08-12T14:00:00",
+    "HomeTeam": "Arsenal",
+    "AwayTeam": "Brentford",
+    "Location": "Emirates Stadium"
+  }
+]
+
+### Future Improvements
+Add filtering by team
+
+Include match results
+
+Implement a refresh button
+
+Add caching for API responses
